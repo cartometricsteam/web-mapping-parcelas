@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang='es'>
+<head>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Parcelas catastrales Málaga ciudad</title>
+	<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+	<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet'/>
+	<link rel='stylesheet' type='text/css' href='parcelas.css'/>
+</head>
+<body>
+	<script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js'></script>
+	<link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css' type='text/css' />
+	<div id='mapa'></div>
+	<div class='cuadro' id='detalles'>
+		<h2>Parcelas catastrales por año de construcción en Málaga ciudad</h2>
+		<div>
+			<p>
+				Fuente: Catastro Inspire
+				<br>
+				Autor: <a href='http://cartometrics.com/'>Cartometrics</a>
+			</p>
+		</div>
+	</div>
+	<div class='cuadro' id='leyenda'></div>
+	<script type='text/javascript' src='parcelas.js'></script>
+</body>
+</html>
